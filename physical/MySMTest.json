@@ -1,0 +1,57 @@
+{
+  "database" : {
+    "name" : "MySMTest",
+    "connectionPools" : [ {
+      "name" : "New Connection Pool_1",
+      "connection" : "'system'.'Adrienne Connection'",
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "isolationLevel" : "default",
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false,
+    "joins" : [ {
+      "leftTable" : "physicalTable:MySMTest.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MySMTest.SAMP_TIME_DAY_D",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MySMTest.SAMP_REVENUE_F.BILL_DAY_DT",
+        "rightColumn" : "physicalColumn:MySMTest.SAMP_TIME_DAY_D.CALENDAR_DATE"
+      } ]
+    }, {
+      "leftTable" : "physicalTable:MySMTest.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MySMTest.SAMP_CUSTOMERS_D",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MySMTest.SAMP_REVENUE_F.CUST_KEY",
+        "rightColumn" : "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.CUST_KEY"
+      } ]
+    }, {
+      "leftTable" : "physicalTable:MySMTest.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MySMTest.SAMP_PRODUCTS_D",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MySMTest.SAMP_REVENUE_F.PROD_KEY",
+        "rightColumn" : "physicalColumn:MySMTest.SAMP_PRODUCTS_D.PROD_KEY"
+      } ]
+    } ]
+  }
+}
