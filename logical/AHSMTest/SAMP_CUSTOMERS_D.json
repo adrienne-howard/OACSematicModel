@@ -1,0 +1,344 @@
+{
+  "logicalTable" : {
+    "name" : "SAMP_CUSTOMERS_D",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "CUST_KEY" ],
+    "logicalColumns" : [ {
+      "name" : "CUST_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.CUST_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.NAME" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "TYPE_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.TYPE_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "FST_CONTACT_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.FST_CONTACT_DT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "SEGMENT_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.SEGMENT_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "INCOME_LVL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.INCOME_LVL" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "STATUS_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.STATUS_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "LST_ORDER_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.LST_ORDER_DT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "ADDRESS_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.ADDRESS_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "MARITAL_ST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.MARITAL_ST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "PREV_MARITAL_ST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.PREV_MARITAL_ST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "dataIsDense" : false
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "PREV_MARITAL_ST_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.PREV_MARITAL_ST_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "BIRTH_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.BIRTH_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "CRDT_RATE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.CRDT_RATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "GENDER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.GENDER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "LTV",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.LTV" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "NUM_ATTRIBUTE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.NUM_ATTRIBUTE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "TOTAL_VALUE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_CUSTOMERS_D.TOTAL_VALUE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_CUSTOMERS_D",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MySMTest.SAMP_CUSTOMERS_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "CUST_KEY" ],
+        "displayKey" : "CUST_KEY"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

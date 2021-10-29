@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "AHSMTest",
+    "sourceBusinessModel" : "businessModel:AHSMTest",
+    "tableOrder" : [ {
+      "name" : "presentationTable:AHSMTest.SAMP_CUSTOMERS_D"
+    }, {
+      "name" : "presentationTable:AHSMTest.SAMP_TIME_DAY_D"
+    }, {
+      "name" : "presentationTable:AHSMTest.SAMP_REVENUE_F"
+    }, {
+      "name" : "presentationTable:AHSMTest.SAMP_PRODUCTS_D"
+    } ]
+  }
+}

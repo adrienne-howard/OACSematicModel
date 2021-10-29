@@ -1,0 +1,62 @@
+{
+  "presentationTable" : {
+    "name" : "SAMP_PRODUCTS_D",
+    "presentationColumns" : [ {
+      "name" : "PROD_KEY",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.PROD_KEY"
+    }, {
+      "name" : "PROD_DSC",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.PROD_DSC"
+    }, {
+      "name" : "ATTRIBUTE_2",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.ATTRIBUTE_2"
+    }, {
+      "name" : "ATTRIBUTE_1",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.ATTRIBUTE_1"
+    }, {
+      "name" : "TYPE",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.TYPE"
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.LOB"
+    }, {
+      "name" : "BRAND",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.BRAND"
+    }, {
+      "name" : "SEQUENCE",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.SEQUENCE"
+    }, {
+      "name" : "BRAND_KEY",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.BRAND_KEY"
+    }, {
+      "name" : "LOB_KEY",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.LOB_KEY"
+    }, {
+      "name" : "TYPE_KEY",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.TYPE_KEY"
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:AHSMTest.SAMP_PRODUCTS_D.TOTAL_VALUE"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:AHSMTest.SAMP_PRODUCTS_D",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:AHSMTest.SAMP_PRODUCTS_D.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:AHSMTest.SAMP_PRODUCTS_D.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:AHSMTest.SAMP_PRODUCTS_D.LOB"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:AHSMTest.SAMP_PRODUCTS_D.Type"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:AHSMTest.SAMP_PRODUCTS_D.Detail"
+      } ]
+    } ]
+  }
+}

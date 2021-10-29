@@ -1,0 +1,25 @@
+{
+  "businessModel" : {
+    "name" : "AHSMTest",
+    "disable" : false,
+    "joins" : [ {
+      "leftTable" : "logicalTable:AHSMTest.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:AHSMTest.SAMP_CUSTOMERS_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "leftTable" : "logicalTable:AHSMTest.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:AHSMTest.SAMP_PRODUCTS_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "leftTable" : "logicalTable:AHSMTest.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:AHSMTest.SAMP_TIME_DAY_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

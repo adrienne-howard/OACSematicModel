@@ -1,0 +1,71 @@
+{
+  "logicalTable" : {
+    "name" : "SAMP_REVENUE_F",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "UNITS",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_REVENUE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_REVENUE_F.UNITS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_REVENUE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_REVENUE_F.DISCNT_VALUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_REVENUE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySMTest.SAMP_REVENUE_F.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_REVENUE_F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MySMTest.SAMP_REVENUE_F" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}
